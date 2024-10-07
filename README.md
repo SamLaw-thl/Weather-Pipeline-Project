@@ -7,12 +7,12 @@ This project encompasses two components: data pipeline and graphical user interf
 3. Creating weather table in sqlite database
 4. Inserting weather data into weather table
 5. Using schedule library to fetch data automatically and periodically
-6. Running three schedule script to fetch data from Hong Kong, New York and Tokyo
+6. Running three schedule scripts to fetch data from Hong Kong, New York and Tokyo
 
 ## Graphical User Interface
 * Allowing user to decide the intervel of interest
 * Provding dropdown menu to choose print function or plot function
-* Print function allows to print the weather
+* Print function allows to print the weather data
 * Providing dropdown menu for city options available range from Hong Kong, New York and Tokyo
 * Providing a function to plot the temperature graph for different cities
 * Providing a button to plot all cities's mean temperature 
@@ -21,13 +21,7 @@ This project encompasses two components: data pipeline and graphical user interf
 Methodology section consists of schema of databases, flowchart, calcuation, graph, interface design.
 
 ## Schema of Databases
-![schema](./img/weather_table.png)
-
-* There are three tables to store the data for Hong Kong, New York and Tokyo respectively
-* They have exactly same columns 
-* `weather` table defualt to store the Hong Kong weather data
-* `new_york_weather` table stores the New York weather data
-* `tokyo_weather` table stores the Tokyo weather data
+![schema](./img/weather_schema.png)
 
 ### Flowchart
 ![flowchart](./img/weather_project_flowchart.png)
@@ -89,3 +83,4 @@ The GUI is based on the `tkinter` libray. Here is a preview of the GUI:
 
 # Conclusion
 This project include two components: data pipeline and GUI. The data pipeline fetch weater data from openweathermap and store into sqlite database. GUI allows user to interact with the weather data. For example, they can print out the weather data and plot the tempearture trand graph for different cities.
+
