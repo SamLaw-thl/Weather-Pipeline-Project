@@ -3,7 +3,6 @@ This project encompasses two components: data pipeline and graphical user interf
 
 ## Data Pipeline
 1. Using openweathermap API key to get access to the weather data
-2. The weather data will be fetched in JSON format
 3. Creating weather table in sqlite database
 4. Inserting weather data into weather table
 5. Using schedule library to fetch data automatically and periodically
