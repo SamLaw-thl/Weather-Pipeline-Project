@@ -42,6 +42,7 @@ After the creation of sqlite file and weather table, the weather data is to be i
 
 ## Calculation
 To calcuclate the mean temperature per hour for specific city, it is to use the `pandas` `mean()` function:
+
 $$\bar{T}=\frac{\sum{T}}{n}$$
 
 ```
@@ -49,6 +50,7 @@ temperature_per_hr_mean = df['temperature'].resample('h').mean()
 ```
 
 `max()` function to find the max temperature per hour for specific city:
+
 $$T_{max} = \max(T_1, T_2, ..., T_n)$$
 
 ```
@@ -56,6 +58,7 @@ temperature_per_hr_max = df['temperature'].resample('h').max()
 ```
 
 `min()` function to find the min temperature per hour for specific city:
+
 $$T_{min} = \min(T_1, T_2, ..., T_n)$$
 
 ```
